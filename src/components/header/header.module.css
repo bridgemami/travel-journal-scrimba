@@ -8,12 +8,27 @@ header {
     color: #ffffff;
 }
 
-h3 {
+.title {
     align-self: flex-start;
-    margin: 0;
     font-weight: 500;
 }
 
 .icon {
     align-self: center;
+}
+
+.icon, .title {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .icon, .title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .icon, .title {
+        font-size: 2.5rem;
+    }
 }

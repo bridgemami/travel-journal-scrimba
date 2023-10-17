@@ -6,7 +6,7 @@ export default function Header() {
   return (
   <header className={s.header}>
     <FontAwesomeIcon icon={faEarthAfrica} className={s.icon} />
-    <h3>my travel journal</h3>
+    <h1 className={s.title}>my travel journal</h1>
   </header>
   )
 }
