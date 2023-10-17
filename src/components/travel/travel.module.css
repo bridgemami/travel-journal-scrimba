@@ -12,8 +12,7 @@
 }
 
 .image {
-width: 200px;
-align-self: center;
+width: 100%;
 border-radius: 5%;
 }
 
@@ -22,7 +21,6 @@ border-radius: 5%;
     flex-direction: column;
     align-items: center;
     gap: .5em;
-    min-width: 100%;
 }
 
 .locationContainer {
@@ -35,7 +33,6 @@ border-radius: 5%;
     display: flex;
     align-items: center;
     gap: .5em;
-    margin: 0;
 }
 
 .icon {
@@ -45,7 +42,7 @@ border-radius: 5%;
 .location {
     margin: .25em 0;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: .1em;
 }
 
 .maps, maps:visited {
@@ -58,15 +55,12 @@ border-radius: 5%;
 }
 
 .articleContainer {
-    /* padding: 0 .5em 0 .5em; */
     display: flex;
     flex-direction: column;
     gap: .5em;
-    min-width: 100%;
 }
 
 .title {
-    /* margin: .25em 0 0 0; */
     text-align: center;
 }
 
@@ -75,7 +69,6 @@ border-radius: 5%;
 }
 
 .info {
-    /* padding: .5em 0; */
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -86,7 +79,6 @@ border-radius: 5%;
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: nowrap;
-        overflow-x: hidden;
     }
     
     .image {
@@ -96,27 +88,38 @@ border-radius: 5%;
     .textContainer {
         align-items: flex-start;
         justify-content: space-between;
-        /* gap: .5em; */
-        align-self: flex-start;
-        min-width: 50%;
-        min-height: 100%;
     }
     
     .locationContainer {
-        align-items: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 1em;
+        font-size: .85rem;
+    }
+
+    .pinContainer {
+        align-self: center;
     }
              
     .title {
-        /* margin: .25em 0 0 0; */
         text-align: left;
-        flex-wrap: wrap;
-        /* width: 50% */
+    }    
+}
+
+@media (min-width: 1024px) {
+    .textContainer {
+        justify-content: space-evenly;
     }
 
-    .description {
-        flex-wrap: wrap;
-        /* width: 50%; */
-        padding-right: .5em;
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .locationContainer {
+        font-size: 1rem;
     }
     
+    .date, .description {
+        font-size: 1.25rem;
+    }
 }
