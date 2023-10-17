@@ -77,7 +77,8 @@ border-radius: 5%;
 @media (min-width: 768px) {
     .travelContainer {
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-wrap: nowrap;
     }
     
@@ -107,8 +108,14 @@ border-radius: 5%;
 }
 
 @media (min-width: 1024px) {
+   
+    .image {
+        width: 50%;
+    }
+    
     .textContainer {
         justify-content: space-evenly;
+        width: 45%;
     }
 
     .title {
@@ -121,5 +128,17 @@ border-radius: 5%;
     
     .date, .description {
         font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1440px) {
+   
+    .image {
+        width: 35%;
+    }
+    
+    .textContainer {
+        justify-content: space-evenly;
+        width: 45%;
     }
 }
